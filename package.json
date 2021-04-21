@@ -1,6 +1,7 @@
 {
   "name": "ngx-datatable",
   "version": "0.0.0",
+  "files": ["dist"],
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -25,7 +26,7 @@
     "publish:lib": "npm publish ./dist/swimlane/ngx-datatable",
     "pack": "npm pack ./dist/swimlane/ngx-datatable/",
     "publish": "run-s publish:lib deploy-docs",
-    "prepare": "run-s build:lib:prod copy-files build:css",
+    "prepare": "run-s build:lib:prod copy-files build:css && cpx \"dist/swimlane/ngx-datatable\" / -C,
     "prepublishOnly": "echo \"This is the workspace -- you probably meant run 'npm run publish'.\" && exit 1"
   },
   "private": true,
