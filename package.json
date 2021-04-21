@@ -1,7 +1,7 @@
 {
   "name": "ngx-datatable",
   "version": "0.0.0",
-  "files": ["lib"],
+  "files": ["projects/swimlane/ngx-datatable"],
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
